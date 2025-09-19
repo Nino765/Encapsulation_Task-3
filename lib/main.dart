@@ -1,20 +1,8 @@
-import 'package:flutter/material.dart';
+import 'product.dart';
 
 void main() {
-  runApp(const MainApp());
-}
-
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
-    );
-  }
+  // Base class
+  var prod = Product("P001", "Generic Item", 100);
+  prod.showDetails();
+  prod.applyDiscount(10);
 }
