@@ -1,5 +1,6 @@
 import 'product.dart';
 import 'electronics.dart';
+import 'clothing.dart';
 
 void main() {
   // Base class
@@ -11,4 +12,9 @@ void main() {
   var laptop = ElectronicProduct("E001", "Laptop", 50000, 24);
   laptop.showDetails();
   laptop.extendWarranty(6);
+
+  // Derived: ClothingProduct
+  var shirt = ClothingProduct("C001", "T-Shirt", 500, "M");
+  shirt.showDetails();
+  shirt.changeSize("L");
 }
