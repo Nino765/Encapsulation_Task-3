@@ -1,6 +1,7 @@
 import 'product.dart';
 import 'electronics.dart';
 import 'clothing.dart';
+import 'food.dart';
 
 void main() {
   // Base class
@@ -17,4 +18,9 @@ void main() {
   var shirt = ClothingProduct("C001", "T-Shirt", 500, "M");
   shirt.showDetails();
   shirt.changeSize("L");
+
+  // Derived: FoodProduct
+  var bread = FoodProduct("F001", "Bread", 50, DateTime(2025, 12, 31));
+  bread.showDetails();
+  bread.checkExpiry();
 }
